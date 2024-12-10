@@ -145,11 +145,7 @@ if __name__ == "__main__":
     logging.info('Models loaded')
     
     image_paths = load_images(config)
-    
-    # image_paths = os.listdir('/home/jack/Mounts/CoffeeDataset/datasets/annotation_batches/batch_12')
-    # image_paths = [f'/home/jack/Mounts/CoffeeDataset/datasets/annotation_batches/batch_12/{image_path}' for image_path in image_paths if image_path.endswith('.jpg')]
-    # image_paths = pd.DataFrame({'image_path': image_paths})
-    
+
     logging.info(f'Found {len(image_paths)} new images to process')
     
     for row in image_paths.itertuples():
