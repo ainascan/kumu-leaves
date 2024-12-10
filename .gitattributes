@@ -1,0 +1,2 @@
+inference/models/kina_25.pt filter=lfs diff=lfs merge=lfs -text
+inference/models/model_final.pth filter=lfs diff=lfs merge=lfs -text

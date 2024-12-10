@@ -1,0 +1,26 @@
+coco_dir: '/home/jack/Documents/Workspace/kumu/compiled_v21'
+mlflow:
+  tracking_uri: "http://127.0.0.1:8081"
+  experiment_name: "Custom Laau Leaf Instance Segmentation"
+  run_description: ""
+  tags:
+    - name: dataset
+      value: compiled_v21
+model_path: '/home/jack/Documents/Workspace/kumu/model_final.pth'
+save_path: '/home/jack/Documents/Workspace/kumu/models/laau/train_custom/checkpoints'
+backbone: 'mobilenet_v3_small'
+iou_threshold: 0.5
+confidence_threshold: 0.7
+seed: 71234971
+batch_size: 8
+instances_per_image: 32
+freeze_at: 2
+epochs: 100
+save_epochs: 10
+val_epochs: 10
+learning_rate: 0.001
+max_size: 1920
+min_size: 1080
+anchor_ratios: [0.7, 1.5, 2.2]
+anchor_sizes: [64, 128, 256, 512, 640]
+resume: False
